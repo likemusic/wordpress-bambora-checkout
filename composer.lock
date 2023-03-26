@@ -1,0 +1,60 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "863c6a2aa2fadad773a4e3aac77e05c9",
+    "packages": [
+        {
+            "name": "likemusic/bambora-checkout",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/likemusic/bambora-checkout.git",
+                "reference": "cd5c5e115fef9abf13ee21550c596f6b561774ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/likemusic/bambora-checkout/zipball/cd5c5e115fef9abf13ee21550c596f6b561774ea",
+                "reference": "cd5c5e115fef9abf13ee21550c596f6b561774ea",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Likemusic\\BamboraCheckout\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Valery Ivashchanka",
+                    "email": "likemusicdev@gmail.com"
+                }
+            ],
+            "description": "PHP SDK to generate payment url for bambora.com.",
+            "support": {
+                "source": "https://github.com/likemusic/bambora-checkout/tree/develop",
+                "issues": "https://github.com/likemusic/bambora-checkout/issues"
+            },
+            "time": "2023-03-26T14:13:14+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "likemusic/bambora-checkout": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

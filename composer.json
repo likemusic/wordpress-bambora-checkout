@@ -1,0 +1,30 @@
+{
+    "name": "affairsoft/wordpress-bambora",
+    "description": "A bambora.com payment integration for http://smwg.ca/",
+    "type": "library",
+    "keywords": ["wordpress", "plugin" ,"payment", "bambora.com", "bambora"],
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Affairsoft\\Wordpress\\Bambora\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Valery Ivashchanka"
+        }
+    ],
+    "repositories": {
+        "beanstream" : {
+            "type": "vcs",
+            "url": "git@github.com:majisti/beanstream-php.git"
+        },
+        "bambora-checkout": {
+            "type": "vcs",
+            "url": "git@github.com:likemusic/bambora-checkout.git"
+        }
+    },
+    "require": {
+        "likemusic/bambora-checkout": "dev-develop"
+    }
+}
