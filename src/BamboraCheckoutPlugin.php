@@ -1,11 +1,11 @@
 <?php
 
-namespace Affairsoft\Wordpress\Bambora;
+namespace Likemusic\Wordpress\Bambora\Checkout;
 
 use JetBrains\PhpStorm\NoReturn;
 use Likemusic\BamboraCheckout\Parameters\LinkParameters;
 
-class BamboraPlugin
+class BamboraCheckoutPlugin
 {
     public function __construct()
     {

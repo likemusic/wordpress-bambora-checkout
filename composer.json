@@ -1,12 +1,12 @@
 {
-    "name": "affairsoft/wordpress-bambora",
-    "description": "A bambora.com payment integration for http://smwg.ca/",
+    "name": "likemusic/wordpress-bambora-checkout",
+    "description": "A Bambora Checkout integration",
     "type": "library",
     "keywords": ["wordpress", "plugin" ,"payment", "bambora.com", "bambora"],
     "license": "proprietary",
     "autoload": {
         "psr-4": {
-            "Affairsoft\\Wordpress\\Bambora\\": "src/"
+            "Likemusic\\Wordpress\\Bambora\\Checkout\\": "src/"
         }
     },
     "authors": [
