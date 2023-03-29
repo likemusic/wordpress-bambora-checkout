@@ -1,12 +1,12 @@
 {
-    "name": "likemusic/wordpress-bambora-checkout",
+    "name": "likemusic/wordpress-bambora-checkout-core",
     "description": "A Bambora Checkout integration",
     "type": "library",
     "keywords": ["wordpress", "plugin" ,"payment", "bambora.com", "bambora"],
     "license": "proprietary",
     "autoload": {
         "psr-4": {
-            "Likemusic\\Wordpress\\Bambora\\Checkout\\": "src/"
+            "Likemusic\\Wordpress\\Bambora\\Checkout\\Core\\": "src/"
         }
     },
     "authors": [
@@ -15,10 +15,6 @@
         }
     ],
     "repositories": {
-        "beanstream" : {
-            "type": "vcs",
-            "url": "git@github.com:majisti/beanstream-php.git"
-        },
         "bambora-checkout": {
             "type": "vcs",
             "url": "git@github.com:likemusic/bambora-checkout.git"

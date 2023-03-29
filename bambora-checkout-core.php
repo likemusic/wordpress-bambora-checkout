@@ -9,6 +9,6 @@ Author URI: https://github.com/likemusic/
 
 require_once 'vendor/autoload.php';
 
-use Likemusic\Wordpress\Bambora\Checkout\BamboraCheckoutPlugin;
+use Likemusic\Wordpress\Bambora\Checkout\Core\BamboraCheckoutCorePlugin;
 
-new BamboraCheckoutPlugin();
+new BamboraCheckoutCorePlugin();

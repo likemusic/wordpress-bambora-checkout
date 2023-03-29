@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2004e733a0fa67a850056a69bb788150",
+    "content-hash": "be007941522b02b46fdf52731e917b26",
     "packages": [
         {
             "name": "likemusic/bambora-checkout",

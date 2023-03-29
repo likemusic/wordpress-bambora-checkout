@@ -1,6 +1,6 @@
 <?php
 
-namespace Likemusic\Wordpress\Bambora\Checkout;
+namespace Likemusic\Wordpress\Bambora\Checkout\Core;
 
 use Likemusic\BamboraCheckout\PaymentUrlGenerator;
 

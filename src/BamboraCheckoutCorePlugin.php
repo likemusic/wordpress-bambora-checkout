@@ -1,18 +1,23 @@
 <?php
 
-namespace Likemusic\Wordpress\Bambora\Checkout;
+namespace Likemusic\Wordpress\Bambora\Checkout\Core;
 
-class BamboraCheckoutPlugin
+class BamboraCheckoutCorePlugin
 {
     public function __construct()
     {
         add_action('admin_menu', [$this, 'addAdminMenu']);
     }
 
+    public function getOptionKey()
+    {
+        return 'bambora-checkout-core';
+    }
+
     public function addAdminMenu(): void
     {
         add_menu_page('Bambora.com Payment', 'Bambora.com Payment', 'manage_options',
-            'bambora', [$this, 'adminPageProcessor'], 'dashicons-money-alt'
+            'bambora-checkout-core', [$this, 'adminPageProcessor'], 'dashicons-money-alt'
         );
     }
 
@@ -33,12 +38,22 @@ class BamboraCheckoutPlugin
             'hash_key' => $_POST['hash_key'],
         ];
 
-        update_option('bambora', $newConfig);
+        $this->updateOption($newConfig);
+    }
+
+    private function updateOption($newConfig)
+    {
+        update_option($this->getOptionKey(), $newConfig);
+    }
+
+    private function getOption()
+    {
+        return get_option($this->getOptionKey());
     }
 
     private function renderAdminPage(): void
     {
-        $config = get_option('bambora');
+        $config = $this->getOption();
 
         echo <<<CONTENT
 <div class="wrap">
